@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'GoogleAnalytics', '3.17.0'
+  s.dependency 'GoogleAnalytics', '3.20'
   s.dependency 'GoogleIDFASupport', '3.14.0'
   s.platform = :ios, '8.0'
   s.static_framework = true
