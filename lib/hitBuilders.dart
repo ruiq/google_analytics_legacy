@@ -137,7 +137,9 @@ class HitBuilder {
     for (final item in _map.entries) {
       final value = item.value;
       if (value != null) {
-        buildMap[item.key] = Helper.encodeValue(value);
+        // 中文会被转义掉
+        // buildMap[item.key] = Helper.encodeValue(value);
+        buildMap[item.key] = value;
       }
     }
 
