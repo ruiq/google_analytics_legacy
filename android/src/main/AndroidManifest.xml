@@ -1,3 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="cz.vps4u.google_analytics_legacy">
+
+    <application>
+        <service
+            android:name="com.google.android.gms.analytics.CampaignTrackingService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.CampaignTrackingReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
 </manifest>
